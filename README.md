@@ -30,6 +30,7 @@ Note that there may be data type inconsistencies, e.g. some columns are dates an
 ## Output specification
 This is meant to be an open ended exercise, so how you decide tackle it is up to you. However, here are some high level guideline that you should follow
 - please use code (e.g. Python) and not a spreadsheet for the analysis
+- please spend no more than 5 hours on the analysis, we don't want this to be a huge burden for you
 - provide a synthesis that contains an assessment of the retention characteristics of the product
 - support your synthesis with charts based on the data provided
 
