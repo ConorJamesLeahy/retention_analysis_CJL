@@ -40,11 +40,11 @@ Note that there may be data type inconsistencies, e.g. some columns are dates an
 
 ## Output specification
 - Numbered ordered notebooks (.ipynb)
-    - 1. Loads the data provided for the case and goes through cleaning operations before storing in db 
-    - 2. Loads in the cleaned data table saved from process 1 and creates additional columns that could be useful in data tables (should start working on this in parallel with 4) - save in same db
-    - 3. Loads in cleaned metric infused data from process 2 and creates a clean group by view as well as appends any grouped metrics before saving in db
-    - 4. Run majority visualizations and analysis for the purpose of report
-    - 5. Lists out data quality points noticed in the data, need to follow up with data provider for more details 
+    - 1_Load_Basic_Clean Loads the data provided for the case and goes through cleaning operations before storing in db 
+    - 2_Metric_Creation Loads in the cleaned data table saved from process 1 and creates additional columns that could be useful in data tables (should start working on this in parallel with 4) - save in same db
+    - 3_Grouped_Views Loads in cleaned metric infused data from process 2 and creates a clean group by view as well as appends any grouped metrics before saving in db
+    - 4_Visualizations_tables Run majority visualizations and analysis for the purpose of report
+    - 5_DataQuality_checks Lists out data quality points noticed in the data, need to follow up with data provider for more details 
         - Small in number so mostly ignored but could also remove from data analysis 
 
 - Subscriptions db (.db)
@@ -61,4 +61,5 @@ Note that there may be data type inconsistencies, e.g. some columns are dates an
     - LTV, overall portfolio forecasting of revenue 
 - Clean up the visualizations_tables code to be more efficient and succint, can also move some of the calculated fields into the grouped_views process 3 notebook. 
 - Try more creative ways to utilize the snapshot view to capture revenue retention and growth 
+    - Already have structure built to easily ingest future data cuts of this data to support similar analysis - will absorb into database
 - Follow up with data quality points and devise better ways to address if no further information is given
